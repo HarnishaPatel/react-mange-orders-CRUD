@@ -1,0 +1,42 @@
+.main_container{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Filter_container{
+    background-color:rgba(192,192,192,0.3);
+    padding: 30px;
+    position: relative;
+    
+}
+
+.Filter_container select{
+    margin-left: 20px;
+    width:150px;
+    padding: 5px;
+}
+
+.main_container table, tr, td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-collapse: collapse;
+}
+
+.main_container table{
+    width:100%;
+}
+
+.Approved{
+    
+    background-color:#C7DAC7
+}
+
+.Denied{
+    background-color:#FFD4D1
+}
+
+.statusLink{
+    border-bottom: 1px solid blue;
+}
+
