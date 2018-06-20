@@ -6,8 +6,7 @@ import {
   Route
 } from 'react-router-dom'
 import { createStore , applyMiddleware } from 'redux';
-import reducer from './Reducers/requested_orders';
-import {Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 
 
@@ -15,7 +14,14 @@ import NavBar from './NavBar'
 import Instructions from './Instructions'
 import Wireframe from './Wireframe'
 import Requests from './Requests'
+import reducer from './Reducers/requested_orders';
 
+/*
+* Implemented redux and react-redux binding for better state management 
+* used middlewear thunk to deal with async behaviour of application  
+*/ 
+
+//create store to handle state
 const store = createStore(
   (reducer),
   applyMiddleware(thunk)
@@ -23,6 +29,7 @@ const store = createStore(
 
 const ProgrammerTest = () => (
   <BrowserRouter>
+  {/* pass store as a props */}
   <Provider store={store} >
     <Fragment>
       <NavBar />

@@ -6,8 +6,7 @@
 .Filter_container{
     background-color:rgba(192,192,192,0.3);
     padding: 30px;
-    position: relative;
-    
+    position: relative;  
 }
 
 .Filter_container select{
@@ -40,3 +39,21 @@
     border-bottom: 1px solid blue;
 }
 
+.popover_ul {
+    list-style: none;
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding: 0px;
+}
+
+.popover_ul li {
+    padding: 5px;
+    border-bottom: 1px solid #CCC;
+}
+
+.popover_ul li a {
+    font-size: 16px;
+    cursor: pointer;
+}
