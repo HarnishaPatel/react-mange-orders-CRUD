@@ -1,15 +1,13 @@
 # react-mange-orders-CRUD
-This is the application to manage order repository.
-
-Here is a short description on what I did:
+This is the application to manage requests repository.
 
 To follow Single Responsibility Principle I have created various components.	
 The hierarchy of Component is: 
-  o	Requests
-    	FilterOrder
-    	OrderTable
-      •	OrderTableRow
-        o	PopOver. 
+  -	Requests
+    -	FilterOrder
+    -	OrderTable
+      -	OrderTableRow
+        -	PopOver. 
 - To communicate between this component and to manage the state better I have implemented redux. Also utilized Redux store to handle data. 
 - Create 3 types of actions to notify the reducer about the change request in store and actions needs to perform.  
 - Dispatch an initial action that is Fetch_Orders only when the data is available. To handle those async activity implemented thunk     middlewear. 
